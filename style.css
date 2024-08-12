@@ -1,28 +1,208 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Josefin Sans", sans-serif;
     box-sizing: border-box;
 }
+:root{
+    font-size: 62.5%;
+}
+body{
+    margin: auto;
+    background-color: #131111;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    
+}
 
-.container{
-    width: 100%;
-    height: 100vh;
-    background-color: hsla(0, 0%, 1%, 0.135);
+.logo{
+    font-family: "Kaushan Script";
+    font-size: 2.4rem;
+    color: white;
+    text-decoration: none;
+}
+.contact{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(95deg, #E72C2C 2.56%, #811919 99.91%);
+    padding: 1rem 2.6rem;
+    border-radius: 4rem;
+    text-decoration: none;
+
+}
+.menu{
+    display: flex;
+    gap: 6rem;
+    justify-content: ;
+    font-size: 2rem;
+    
+    list-style: none;
+    
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+.hero{
+    display: flex;
+    /* align-items: center; */
+}
+
+
+
+
+.ctabtn-hero{
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-top: 3.5rem;
+
 }
-.content{
-    text-align: center;
-}
-.content h1{
-    color: #ffff;
-    text-transform: uppercase;
-}
-.backgroundclip{
+
+
+.overlay{
+    /* width: 100%; */
+   
     position: absolute;
-    right: 0;
-    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     z-index: -1;
+
+}
+
+
+@media (min-width: 400px){
+    .herosection{
+        padding: 0 2rem 0 2rem;
+        width: 100%;
+        position: relative;
+
+    }
+    .navbar{
+        display: none;
+    }
+    .navbar_mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2rem;
+    }
+    .hero{
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+    .herocontent{
+        width: 36.4rem;
+        margin-bottom: 5rem;
+    }
+    .th{
+        font-size: 3rem;
+        text-transform: uppercase;
+
+    }
+    .th-span{
+        color: #E72C2C;
+        line-height: 2rem;
+    }
+    .subth{
+        font-size: 2rem;
+        font-weight: 400;
+        margin: 3rem 0 -2rem;
+    }
+    .heroimage{
+        display: none;
+    }
+   .heroimage-mobile{
+        width: 80%;
+        position: relative;
+        z-index: -2;
+        margin: 4.2rem 0 3.9rem 0;
+   }
+   #cta-hero{
+    border: none;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    padding: 1rem 2.2rem;
+    background-color: #1534A9;
+    color: white;
+    margin-right: 3.7rem;
+    
+}
+
+.overlay{
+    background: linear-gradient(180deg, rgba(13, 13, 13, 0.00) 25.1%, #000 56.93%);
+
+
+}
+}
+@media (min-width: 640px) {
+    .heroimage-mobile{
+        display: none;
+    }
+    .navbar_mobile{
+        display: none;
+    }
+
+}
+@media (min-width: 768px){
+    .herosection{
+        min-height: 81.5rem;
+        padding: 0 5.5rem 0 5.5rem;
+    }
+    .navbar{
+        display: flex;
+        padding: 3.2rem 0 5rem 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hero{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+        flex-direction: row;
+        align-items: flex-start;
+       
+
+    }
+    .herocontent{
+        width: 55rem;
+        
+        
+    }
+    .th{
+        font-size: 4rem;
+        margin-top: 10rem;
+    }
+    .th-span{
+        line-height: 5rem;
+    }
+    .subth{
+        font-size: 2.8rem;
+    }
+    .heroimage{
+        display: flex;
+        width: 45%;
+        margin: 5.5rem 0 0 0;
+        position: relative;
+        z-index: -2;
+    }
+    #cta-hero{
+        border: none;
+        border-radius: 4rem;
+        font-size: 2.8rem;
+        padding: 1rem 3.2rem;
+        background-color: #1534A9;
+        color: white;
+        margin-right: 3.7rem;
+       
+        
+    }
+    .overlay{
+        background: linear-gradient(180deg, rgba(13, 13, 13, 0.00) 0%, #000 104.59%);    
+    
+    }
+   
 }
