@@ -11,11 +11,11 @@ body{
     background-color: #131111;
     color: white;
     font-family: "Poppins", sans-serif;
-    
+   
 }
 
 .logo{
-    font-family: "Kaushan Script";
+    font-family: 'Kaushan Script';
     font-size: 2.4rem;
     color: white;
     text-decoration: none;
@@ -30,19 +30,7 @@ body{
     text-decoration: none;
 
 }
-.menu{
-    display: flex;
-    gap: 6rem;
-    justify-content: ;
-    font-size: 2rem;
-    
-    list-style: none;
-    
-}
-.menu a{
-    color: white;
-    text-decoration: none;
-}
+
 .hero{
     display: flex;
     /* align-items: center; */
@@ -72,7 +60,7 @@ body{
 }
 
 
-@media (min-width: 400px){
+@media (min-width: 350px){
     .herosection{
         padding: 0 2rem 0 2rem;
         width: 100%;
@@ -95,12 +83,13 @@ body{
         
     }
     .herocontent{
-        width: 36.4rem;
+        width: 90%;
         margin-bottom: 5rem;
     }
     .th{
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-transform: uppercase;
+        letter-spacing: 1.5px;
 
     }
     .th-span{
@@ -108,9 +97,10 @@ body{
         line-height: 2rem;
     }
     .subth{
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: 400;
         margin: 3rem 0 -2rem;
+        line-height: 2.5rem;
     }
     .heroimage{
         display: none;
@@ -137,27 +127,285 @@ body{
 
 
 }
+#bodycontent{
+    margin: 4rem auto;
+    width: 90%;
+ }
+.meet-nelio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-@media (min-width: 640px) {
+.infonelio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.neliomeet{
+    width: 80%;
+}
+.h1meet{
+    margin: 4rem 0 1.5rem 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+   
+}
+.h1meet span{
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 0.6px;
+    -webkit-text-fill-color: transparent;
+}
+
+.pmeet{
+    width: 90%;
+    line-height: 2rem;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #D9D9D9;
+}
+.pmeet span{
+    font-weight: 700;
+    color: white;
+}
+.timeline{
+    display: flex;
+    /* text-align: start; */
+    margin-top: 3.4rem;
+       
+}
+.timeline div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.2rem solid white;
+    border-top: none;
+    border-bottom: 0;
+    height: 10rem;
+    border-color: rgba(255, 255, 255, 0.35);
+    text-align: center;
+
+
+    
+}
+.timeline div:nth-child(1){
+    border-right: none;
+}
+.timeline div:nth-child(3){
+    border-left: none;
+}
+.timeline div h2{
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+}
+.timeline div p{
+    font-size: 1.2rem;
+    line-height: 15px; /* 125% */
+    letter-spacing: 0.6px;
+    width: 95%;
+}
+.btnbody{
+    /* width: 100%; */
+    margin-top: 6rem;
+}
+
+.morebtn{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(95deg, #E72C2C 2.56%, #811919 99.91%);
+    padding: 2rem 6rem;
+    border-radius: 4rem;
+    text-decoration: none;
+    
+}
+.divider{
+    margin-top: 6rem;
+    width: 80%;
+}
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services .infonelio{
+    margin-top: 4rem;
+}
+.services .h1meet{
+    margin-bottom: 2rem;
+}
+
+ .planos{
+    display: flex;
+   margin-top: 4rem;
+ }
+ .normal{
+    background-color: #E72C2C;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    border-radius: 0.8rem;
+ }
+ .vip{
+    background: rgba(217, 217, 217, 0.25);
+    padding: 0.9rem 3rem;
+    font-size: 1.6rem;
+    border-radius: 0.8rem;
+    position: relative;
+    right: 2rem;
+    z-index: -1;
+ }
+ .plans_normal{
+    display: flex;
+ }
+ .plans_normal {
+
+ }
+}
+
+@media (min-width: 550px) {
+    .navbar_mobile{
+        display: flex;
+    }
+    .th{
+        font-size: 3.5rem;
+
+}
+.subth{
+    font-size: 2.5rem;
+}
+
+#cta-hero{
+    padding: 1rem 2.5rem;
+    font-size: 2rem;
+}
+.timeline div p{
+    font-size: 1.6rem;
+}
+
+
+
+}
+@media (min-width: 700px) {
+    .navbar_mobile{
+        display: none;
+       
+    }
+    .navbar{
+        display: flex;
+        padding: 3.2rem 0 0rem 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu{
+        display: flex;
+        gap: 3rem;
+        font-size: 2rem;
+        
+        list-style: none;
+        
+    }
+    .menu a{
+        color: white;
+        text-decoration: none;
+    }
+
+    
+    .hero{
+     flex-direction: row;
+     justify-content: center;
+    }
     .heroimage-mobile{
         display: none;
     }
-    .navbar_mobile{
-        display: none;
+    .heroimage{
+        display: flex;
+        width: 45%;
+        margin-top: 4rem;
+        z-index: -2;
+    }
+    .herocontent{
+        width: 50%;
+        
+        
+    }
+    .th{
+        font-size: 2.5rem;
+        
+        line-height: 2.4rem;
+    }
+    
+    .subth{
+        font-size: 1.6rem;
     }
 
+    .overlay{
+        background: linear-gradient(180deg, rgba(13, 13, 13, 0.00) 25.1%, #000 90.93%);
+    
+    
+    }
+    .meet-nelio{
+        
+            width: 90%;
+            margin: auto;
+        flex-direction: row;
+       
+    }
+  .pmeet{
+        text-align: start;
+        
+    }
+
+    .neliomeet{
+        width: 47%;
+       
+    }
+    .infonelio{
+        padding-bottom: 4rem;
+    }
+    .timeline{
+       width: 90%;
+           
+    }
+    .btnbody{
+        width: 90%;
+        
+            margin-top: 3rem;
 }
-@media (min-width: 768px){
+    
+    .morebtn{
+        font-size: 2.2rem;
+        padding: 1.5rem 4rem;
+         
+    }
+    .divider{
+        display: none;
+    }
+    .services .pmeet{
+        text-align: center;
+    }
+    
+   
+}
+@media (min-width: 868px){
     .herosection{
-        min-height: 81.5rem;
+        /* min-height: 81.5rem; */
         padding: 0 5.5rem 0 5.5rem;
     }
     .navbar{
         display: flex;
-        padding: 3.2rem 0 5rem 0;
+        padding: 3.2rem 0 0rem 0;
         justify-content: space-between;
         align-items: center;
     }
+    .navbar_mobile{
+        display: none;
+    }
+    .heroimage-mobile{
+        display: none;
+    }
+    
     .hero{
         display: flex;
         justify-content: space-between;
@@ -168,27 +416,29 @@ body{
 
     }
     .herocontent{
-        width: 55rem;
-        
-        
+        width: 40.8rem;
+          
     }
-    .th{
-        font-size: 4rem;
-        margin-top: 10rem;
-    }
-    .th-span{
-        line-height: 5rem;
-    }
-    .subth{
-        font-size: 2.8rem;
-    }
-    .heroimage{
+     .heroimage{
         display: flex;
         width: 45%;
-        margin: 5.5rem 0 0 0;
+        /* margin: 5.5rem 0 0 0; */
         position: relative;
         z-index: -2;
     }
+    .th{
+        font-size: 3rem;
+        margin-top: 8rem;
+    }
+    .th-span{
+        line-height: 3.5rem;
+    }
+    .subth{
+        font-size: 2.2rem;
+        line-height: 3.5rem;
+        width: 43rem;
+    }
+   
     #cta-hero{
         border: none;
         border-radius: 4rem;
@@ -204,5 +454,75 @@ body{
         background: linear-gradient(180deg, rgba(13, 13, 13, 0.00) 0%, #000 104.59%);    
     
     }
+
+    
+    .neliomeet{
+        max-width: 90%;
+    }
+    .h1meet{
+        font-size: 4rem;
+        letter-spacing: 2.4px;
+       
+    }
+  
+  .pmeet{
+        line-height: 2.6rem;
+        font-size: 1.8rem;
+        text-align: start;
+        margin-top: 2rem;
+    }
    
+    .timeline div h2{
+        font-size: 3.4rem;
+    }
+    .timeline div p{
+        font-size: 1.4rem;
+        line-height: 2rem; 
+        text-align: center;
+    }
+    .btnbody{
+        margin-top:5rem;
+    }
+    .morebtn{
+        font-size: 2.4rem;
+        padding: 2rem 4rem;
+         
+    }
+}
+@media(min-width: 1024px){
+    .herocontent{
+        width: 90%;
+        margin-bottom: 5rem;
+    }
+    .th{
+        font-size: 4rem;
+        line-height:4rem;
+    }
+    .subth{
+        font-size: 2.4rem;
+    }
+    .meet-nelio h1{
+        font-size: 4rem;
+       
+    }
+    .infonelio{
+        padding-bottom: 12rem;
+    }
+    .meet-nelio p{
+        line-height: 2.8rem;
+        font-size: 1.8rem;
+        text-align: start;
+      
+    }
+    .timeline{
+        margin-top: 4rem;
+
+    }
+    .timeline div h2{
+        margin-bottom: 0;
+    }
+    .timeline div p{
+        margin-top: 0;
+    }
+
 }
