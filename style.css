@@ -121,6 +121,9 @@ body{
     margin-right: 3.7rem;
     
 }
+.ctabtn-hero img{
+    display: none;
+}
 
 .overlay{
     background: linear-gradient(180deg, rgba(13, 13, 13, 0.00) 25.1%, #000 56.93%);
@@ -239,29 +242,208 @@ body{
 
  .planos{
     display: flex;
-   margin-top: 4rem;
+    justify-content: center; 
+    margin: 2rem auto;
+   
  }
  .normal{
     background-color: #E72C2C;
     padding: 1rem 2rem;
     font-size: 1.6rem;
     border-radius: 0.8rem;
+    position: relative;
+    left: 2rem;
+    cursor: pointer;
+    
  }
  .vip{
     background: rgba(217, 217, 217, 0.25);
-    padding: 0.9rem 3rem;
+    padding: 1rem 3rem;
     font-size: 1.6rem;
     border-radius: 0.8rem;
+    cursor: pointer;
+    
+ }
+ #shownormal{
+    display: none;
     position: relative;
+    left: 2rem;
+    
+ }
+ #shownormal .normal{
+    background: rgba(217, 217, 217, 0.25);
+    left: 0rem;
+ }
+ #shownormal .vip{
+    position: relative;
+    background-color: #E72C2C;
     right: 2rem;
-    z-index: -1;
  }
- .plans_normal{
+
+ .cards{
+    margin-top: 4rem;
     display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    font-family: "Inter", sans-serif;
  }
- .plans_normal {
+ #plans_vip{
+    display: none;
+ }
+ .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 296.955px;
+    height:347px;
+    background-color: #1534A9;
+    gap: 4.7REM;
+    
+ }
+ .card:nth-child(2){
+    background-color: #DB1D1D ;
+ }
+ .info{
+    display: flex;
+    width: 175px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    padding-top: 85px;
+    letter-spacing: 0.18rem;
 
  }
+ .info p{
+    font-size: 1.6rem;
+ }
+ .info h3{
+    font-size: 2rem;
+    font-weight: normal;
+ }
+ .info h2{
+    font-size: 2.4rem;
+
+ }
+ .info h1{
+    font-size: 3.6rem;
+ }
+
+  
+ .btncard{
+    padding: 1.8rem 7.5rem;
+    border-radius: 4rem;
+    border: none;
+    box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.25);
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1534A9;
+    cursor: pointer;
+
+ }
+ .card:nth-child(2) .btncard{
+    color: #DB1D1D;
+ }
+ .beneficios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    gap: 2%;
+    margin-top: 4rem;
+ }
+ .contbene{
+    text-align: center;
+    margin-bottom: 4rem;
+    
+    /* padding: 0 1rem; */
+ }
+ .contbene img{
+    width: 57%;
+ }
+ .contbene p{
+    font-size: 1.4rem;
+    width: 14.1rem;
+    margin-top: 1.4rem;
+    text-transform: uppercase;
+    line-height: 2rem;
+ }
+ .introteste {
+    text-align: center;
+    width: 80%;
+    margin: 15rem auto 6rem;
+
+ }
+ .introteste h1{
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    line-height: 4rem;
+
+ }
+ .introteste h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: #D9D9D9;
+    -webkit-text-stroke-width: 0.1rem;
+ }
+ .introteste p{
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    font-weight: normal;
+    color: #D9D9D9;
+    text-align: justify;
+ }
+ .introteste p span{
+    font-weight: 700;
+    color: white;
+    }
+ .coment{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    /* position: relative; */
+    
+ }
+    .coment img{
+        width: 80%;
+    }
+    .name{
+        position: relative;
+        bottom: 5.5rem;
+        text-align: center;
+    }
+    .name h2{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .name p{
+        font-size: 1.6rem;
+        margin-top: 0.5rem;
+        font-family: 'Kaushan Script';
+    }
+    .testemunho{
+        width: 80%;
+    }
+    .testemunho h1{
+        font-size: 6.4rem;
+        line-height: 1rem;
+        color: #1534A9;
+    }
+    .testemunho img{
+        width: 50%;
+    }
+    .testemunho p{
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    font-weight: normal;
+    color: #D9D9D9;
+    text-align: justify;
+    margin-top: 1rem;
+    }
+    .testemunho p span{
+    font-weight: 700;
+    color: white;
+    }
 }
 
 @media (min-width: 550px) {
@@ -345,6 +527,9 @@ body{
     
     
     }
+    .ctabtn-hero img{
+        display: flex;
+    }
     .meet-nelio{
         
             width: 90%;
@@ -385,7 +570,27 @@ body{
     .services .pmeet{
         text-align: center;
     }
-    
+    .cards {
+        flex-direction: row
+        ;
+    }
+    .beneficios{
+        gap: 4rem;
+        margin-bottom: 6rem;
+    }
+    .contbene{
+        margin-bottom: 0rem;
+    }
+    .contbene img{
+        width: 65%;
+     }
+     .contbene p{
+        font-size: 1.4rem;
+        width: 14.1rem;
+        margin-top: 1.4rem;
+        text-transform: uppercase;
+        line-height: 2rem;
+     }
    
 }
 @media (min-width: 868px){
@@ -505,7 +710,7 @@ body{
         font-size: 4rem;
        
     }
-    .infonelio{
+    .meet-nelio .infonelio{
         padding-bottom: 12rem;
     }
     .meet-nelio p{
@@ -524,5 +729,24 @@ body{
     .timeline div p{
         margin-top: 0;
     }
+    .beneficios{
+        gap: 4rem;
+        margin-bottom: 6rem;
+        width: 90%;
+    }
+    .contbene{
+        margin-bottom: 0rem;
+    }
+    .contbene img{
+        /* width:%; */
+     }
+     .contbene p{
+        font-size: 2rem;
+        width: 19.6rem;
+        margin-top: 1.4rem;
+        text-transform: uppercase;
+        line-height: 3rem;
+        
+     }
 
 }
