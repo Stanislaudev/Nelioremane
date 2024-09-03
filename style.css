@@ -11,7 +11,12 @@ body{
     background-color: #131111;
     color: white;
     font-family: "Poppins", sans-serif;
+    
    
+}
+.navbar{
+    max-width: 1200px;
+    margin: auto;
 }
 
 .logo{
@@ -34,6 +39,8 @@ body{
 .hero{
     display: flex;
     /* align-items: center; */
+    max-width: 1200px;
+    margin: auto;
 }
 
 
@@ -57,7 +64,84 @@ body{
     height: 100%;
     z-index: -1;
 
+} 
+#bodycontent{
+    max-width: 1100px;
 }
+.container_swipe{
+    margin-top: 8rem;
+    
+    
+}
+.slider-wrapper{
+    overflow: hidden;
+    max-width: 1100px;
+    margin: 0 0 5.5rem;
+    
+}
+.items{
+    display: flex;
+    user-select: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 0 2rem 2rem;
+    background: rgba(21, 52, 169, 0.52);
+    max-width: 27rem;
+    height: 55rem;
+    border-radius: 0.8rem;
+    background: rgba(21, 52, 169, 0.52);
+    margin: 0 auto;
+}
+
+
+.card-list .card-item .user-image{
+    width: 20rem;
+    margin-bottom: 2rem;
+
+}
+
+.card-list .card-item .user-profission{
+
+    font-size: 1.6rem;
+   font-family: 'Kaushan Script';
+   margin: 0.5rem 0 0.5rem;
+
+} 
+.card-list .card-item .stars{
+    width: 15.0rem;
+    margin-bottom: 2rem;
+}
+.card-list .card-item .comentario{
+    font-size: 1.4rem;
+    color: #D9D9D9;
+    text-align: justify;
+    line-height: 2.5rem;
+    height: 15rem;
+    margin-bottom: 1rem;
+    
+}
+.card-list .card-item .comentario span{
+    color: white;
+    font-weight: 600;
+}
+
+.slider-wrapper .swiper-pagination-bullet{
+    background: #fff;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.slider-wrapper .swiper-slide-button{
+    display: none;
+    color: #D9D9D9;
+    margin-top: -5rem;
+    transition: 0.2s ease-in-out;
+}
+.slider-wrapper .swiper-slide-button:hover{
+    color: #DB1D1D;
+}
+
 
 
 @media (min-width: 350px){
@@ -175,6 +259,7 @@ body{
     display: flex;
     /* text-align: start; */
     margin-top: 3.4rem;
+    
        
 }
 .timeline div{
@@ -185,10 +270,10 @@ body{
     border: 0.2rem solid white;
     border-top: none;
     border-bottom: 0;
-    height: 10rem;
+    height: 12rem;
     border-color: rgba(255, 255, 255, 0.35);
     text-align: center;
-
+    width: 100%;
 
     
 }
@@ -295,7 +380,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 296.955px;
+    width: 250px;
     height:347px;
     background-color: #1534A9;
     gap: 4.7REM;
@@ -310,7 +395,7 @@ body{
     flex-direction: column;
     align-items: center;
     gap: 0.8rem;
-    padding-top: 85px;
+    padding-top: 70px;
     letter-spacing: 0.18rem;
 
  }
@@ -331,7 +416,7 @@ body{
 
   
  .btncard{
-    padding: 1.8rem 7.5rem;
+    padding: 1.8rem 6rem;
     border-radius: 4rem;
     border: none;
     box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.25);
@@ -368,9 +453,10 @@ body{
     text-transform: uppercase;
     line-height: 2rem;
  }
+
  .introteste {
     text-align: center;
-    width: 80%;
+    width: 90%;
     margin: 15rem auto 6rem;
 
  }
@@ -379,6 +465,8 @@ body{
     text-transform: uppercase;
     margin-bottom: 3rem;
     line-height: 4rem;
+    max-width: 600px;
+    margin: 2rem auto;
 
  }
  .introteste h1 span{
@@ -387,7 +475,7 @@ body{
     -webkit-text-stroke-width: 0.1rem;
  }
  .introteste p{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 2.5rem;
     font-weight: normal;
     color: #D9D9D9;
@@ -397,55 +485,188 @@ body{
     font-weight: 700;
     color: white;
     }
- .coment{
+
+    .perfil{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .testemunho img:nth-child(4){
+        display: none;
+    }
+    .id {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .id img{
+            width: 80%;
+            max-width: 41.4rem;
+        }
+    .name{
+    position: relative;
+    bottom: 5.5rem;
+    text-align: center;
+    }
+
+    .name h2{
+    font-size: 2rem;
+    margin-bottom: 0.4rem;
+    }
+
+    .name p{
+    font-size: 1.4rem;
+    font-family: 'Kaushan Script';
+
+    }
+    .testemunho {
+    width: 80%;
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    /* position: relative; */
+    /* align-items: center; */
     
- }
-    .coment img{
-        width: 80%;
-    }
-    .name{
-        position: relative;
-        bottom: 5.5rem;
-        text-align: center;
-    }
-    .name h2{
-        font-size: 2rem;
-        font-weight: 600;
-    }
-    .name p{
-        font-size: 1.6rem;
-        margin-top: 0.5rem;
-        font-family: 'Kaushan Script';
-    }
-    .testemunho{
-        width: 80%;
-    }
-    .testemunho h1{
-        font-size: 6.4rem;
-        line-height: 1rem;
-        color: #1534A9;
-    }
-    .testemunho img{
-        width: 50%;
-    }
-    .testemunho p{
-    font-size: 1.6rem;
-    line-height: 2.5rem;
-    font-weight: normal;
-    color: #D9D9D9;
-    text-align: justify;
-    margin-top: 1rem;
-    }
-    .testemunho p span{
-    font-weight: 700;
-    color: white;
-    }
+}
+.testemunho h1{
+    font-size: 6.4rem;
+    color: #1534A9;
+    line-height: 2rem;
+}
+.testemunho img{
+    width: 50%;
+    margin-bottom: 1rem;
 }
 
+.testemunho p{
+    font-size: 1.4rem;
+    color: #D9D9D9;
+    text-align: justify;
+    line-height: 2.5rem;
+}
+
+.testemunho p span{
+ font-weight: 600;
+ color: white;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: #1534A9; */
+    
+}
+
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #303030;
+    width: 100%;
+    height: 50rem;
+    gap: 2rem;
+
+}
+.left .logo{
+    display: none;
+    font-weight: normal;
+    font-size: 3rem;
+}
+.icons{
+    display: none;
+   
+}
+.iconsmob{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.icons img{
+    width: 3.5rem;
+}
+.left h3{
+    text-decoration: underline;
+    font-size: 1.8rem;
+    margin-top: 4rem;
+}
+.contacts{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.contacts p, a{
+    font-size: 1.8rem;
+}
+.contacts p{
+    /* padding: 0.5rem; */
+    margin-bottom: 1rem;
+}
+.contacts a{
+    color: white;
+    text-decoration: none;
+}
+
+.form-container{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background: #1534A9;
+    height: 40rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 30rem;
+}
+form .label{
+    font-size: 2.4rem;
+    
+}
+form .input{
+    font-size: 1.8rem;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    border: none;
+    width: 30rem;
+    outline: none;
+
+
+}
+form .submit{
+    font-size: 1.8rem;
+    padding: 1.2rem;
+    width: 15rem;
+    border-radius: 0.5rem;
+    border: none;
+    background: #DB1D1D;
+    color: white;
+}
+
+
+
+}
+
+
+
+
+@media (min-width: 500px){
+    .name{
+        bottom: 7rem;
+    }
+  .name h2{
+    font-size: 2.4rem;
+  } 
+  .name p{
+    font-size: 1.8rem;
+  }
+}
 @media (min-width: 550px) {
     .navbar_mobile{
         display: flex;
@@ -463,12 +684,45 @@ body{
     font-size: 2rem;
 }
 .timeline div p{
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+}
+form{
+    width: 42rem;
+}
+form .input{
+    padding: 1.4rem;
+    width: 42rem;
+    
+
+
+}
+form .submit{
+    font-size: 2rem;
+    padding: 1.5rem;
+    width: 18rem;
+    
+}
+.icons img{
+    width: 4rem;
 }
 
 
 
 }
+
+@media (min-width: 610px) {
+    .name{
+        bottom: 9rem;
+    }
+    .contacts{
+        
+        flex-direction: row;
+        gap: 5rem;
+    
+    }
+    
+}
+
 @media (min-width: 700px) {
     .navbar_mobile{
         display: none;
@@ -535,6 +789,7 @@ body{
             width: 90%;
             margin: auto;
         flex-direction: row;
+        gap: 2rem;
        
     }
   .pmeet{
@@ -548,9 +803,14 @@ body{
     }
     .infonelio{
         padding-bottom: 4rem;
+        
+
     }
+    
+
     .timeline{
        width: 90%;
+       
            
     }
     .btnbody{
@@ -591,7 +851,58 @@ body{
         text-transform: uppercase;
         line-height: 2rem;
      }
+     .introteste{
+        width: 90%;
+     }
+     .introteste h1{
+        font-size: 3rem;
+        line-height: 4rem;
+    
+     }
+     
+     .introteste p{
+        font-size: 2rem;
+        line-height: 3.5rem;
    
+     }
+
+    .name h2{
+        font-size: 2.8rem;
+    } 
+    .name p{
+        font-size: 2rem;
+    }
+    .testemunho p{
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+    .contacts{
+        
+        flex-direction: row;
+        gap: 8rem;
+    
+    }
+    form{
+        width: 45rem;
+    }
+    form .input{
+        padding: 1.4rem;
+        width: 45rem;
+        
+    
+    
+    }
+    form .submit{
+        font-size: 2rem;
+        padding: 1.5rem;
+        width: 18rem;
+        
+    }
+    .icons img{
+        width: 4rem;
+    }
+
+     
 }
 @media (min-width: 868px){
     .herosection{
@@ -665,9 +976,9 @@ body{
         max-width: 90%;
     }
     .h1meet{
-        font-size: 4rem;
+        font-size: 3rem;
         letter-spacing: 2.4px;
-       
+
     }
   
   .pmeet{
@@ -678,7 +989,7 @@ body{
     }
    
     .timeline div h2{
-        font-size: 3.4rem;
+        font-size: 3rem;
     }
     .timeline div p{
         font-size: 1.4rem;
@@ -693,6 +1004,114 @@ body{
         padding: 2rem 4rem;
          
     }
+    .perfil{
+        flex-direction: row;
+        width: 95%;
+        
+    }
+    
+    .name{
+        bottom: 7rem;
+    }
+    .testemunho img:nth-child(4){
+        display: flex;
+        width: 100%;
+        margin-top: 3rem;
+    }
+    
+    .left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #303030;
+        width: 50%;
+        height: 40rem;
+        gap: 2rem;
+    
+    }
+    .left .logo{
+        display: flex;
+        font-weight: normal;
+        font-size:4rem;
+    }
+    .icons{
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .icons img{
+        width: 4rem;
+    }
+    .iconsmob{
+        display: none;
+    }
+    .left h3{
+        text-decoration: underline;
+        font-size: 1.8rem;
+        margin-top: 4rem;
+    }
+    .contacts{
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+    
+    }
+    
+    .contacts p, a{
+        font-size: 1.8rem;
+    }
+    .contacts p{
+        padding: 0.5rem;
+    }
+    .contacts a{
+        color: white;
+        text-decoration: none;
+    }
+    .formmob{
+        display: none;
+    }
+    
+    .form-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        background: #1534A9;
+        height: 40rem;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 30rem;
+    }
+    form .label{
+        font-size: 2.4rem;
+        
+    }
+    form .input{
+        font-size: 1.8rem;
+        padding: 1.2rem;
+        border-radius: 0.5rem;
+        border: none;
+        width: 33rem;
+        outline: none;
+    
+    
+    }
+    form .submit{
+        font-size: 1.8rem;
+        padding: 1.2rem;
+        width: 15rem;
+        border-radius: 0.5rem;
+        border: none;
+        background: #DB1D1D;
+        color: white;
+    }
+
+   
 }
 @media(min-width: 1024px){
     .herocontent{
@@ -738,7 +1157,7 @@ body{
         margin-bottom: 0rem;
     }
     .contbene img{
-        /* width:%; */
+        width: 50%;
      }
      .contbene p{
         font-size: 2rem;
@@ -748,5 +1167,36 @@ body{
         line-height: 3rem;
         
      }
+
+     .name{
+        bottom: 8rem;
+     }
+     .testemunho{
+        margin-bottom: 8rem;
+     }
+
+     .card-list .card-item{
+       
+        width: 27rem;
+        height: 55rem;
+        
+    
+    }
+    form{
+        width: 42rem;
+    }
+    form .input{
+        padding: 1.4rem;
+        width: 42rem;
+        
+    
+    
+    }
+    form .submit{
+        font-size: 2rem;
+        padding: 1.3rem;
+        width: 16rem;
+        
+    }
 
 }
