@@ -544,7 +544,7 @@ body{
     line-height: 2.5rem;
 }
 
-.testemunho p span{
+.testemunho p span, .premio span{
  font-weight: 600;
  color: white;
 }
@@ -557,6 +557,10 @@ footer{
     
 }
 
+a{
+   text-decoration: none; 
+   color: white;
+}
 
 .left{
     display: flex;
@@ -648,9 +652,102 @@ form .submit{
     background: #DB1D1D;
     color: white;
 }
+.cabecalho{
+    width: 100%;
+    text-align: center;
+    background: #303030;
+    margin-top: 1.5rem;
+}
+.cabecalho h1{
+    padding: 3rem 0;
+}
+.cabecalho .titulos{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 1rem;
+    color: #D9D9D9;
+}
+.pmeet:nth-last-child(1){
+    margin-top: 2rem;
+}
 
+.experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4rem;
+    margin: 5rem auto 0;
+    background: #1534A9;
+    width: 90%;
+    padding: 4rem;
+    
+}
+.experience .quntdata{
+    text-align: center;
+    
+}
+.quntdata h1{
+    font-size:4rem;
+    margin-bottom: 0.6rem;
+    letter-spacing: 2px;
+}
+.quntdata p{
+    font-size: 1.6rem;
+    color: #D9D9D9;
+}
 
+    .premios{
+        text-align: center;
+        margin-bottom: 5rem;
 
+    }
+    .premio img{
+        width: 30%;
+        margin: 4rem 0 1rem;
+
+    }
+    .premio p{
+        font-size: 1.4rem;
+        width: 50%;
+        text-align: center;
+        margin: auto;
+    }
+    .justifyed{
+        text-align: justify;
+    }
+
+    #incluso_A{
+        display: flex;
+        margin: auto;
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        
+    }
+    #incluso{
+        display: none;
+    }
+
+    .intext_p{
+        min-height: 10rem;
+        padding: 2rem;
+        background: #303030;
+
+    }
+    .intext_p p{
+        margin-top: 2rem;
+        font-size: 1.4rem;
+        text-align: justify;
+        color: #D9D9D9;
+    }
+    .intext_A h1{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    
 }
 
 
@@ -852,7 +949,7 @@ form .submit{
         line-height: 2rem;
      }
      .introteste{
-        width: 90%;
+        width: 80%;
      }
      .introteste h1{
         font-size: 3rem;
@@ -901,6 +998,87 @@ form .submit{
     .icons img{
         width: 4rem;
     }
+   
+    .cabecalho{
+        margin-top:2rem;
+    }
+    .cabecalho h1{
+        padding: 7rem 0 5rem;
+        font-size: 3.2rem;
+    }
+    .cabecalho .titulos{
+        padding-bottom: 2rem;
+    }
+    .cabecalho .titulos p{
+        font-size: 2rem;
+    }
+    .experience{
+        flex-direction: row;
+        background: #303030;
+        width: 100%;
+        padding: 6rem 6rem 6rem;
+        /* position: absolute; */
+    }
+    
+    .quntdata p{
+        
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+        
+        .premio p{
+            font-size: 1.8rem;
+            width: 80%;
+
+        }
+        #incluso_A{
+            display: none;
+        }
+        #incluso{
+            display: grid;
+            width: 80%;
+            margin: auto;
+            grid-template-areas: "A B B" "C C D";
+            gap: 2rem;
+           
+        }
+       
+        .intext{
+            display: flex;
+            align-items: center;
+            background: #303030;
+            min-height: 24.4rem;
+            padding: 4rem;
+        } 
+       
+        .intext p{
+            font-size: 1.6rem;
+            line-height: 3.3rem;
+            
+        }
+        .intext h1{
+            text-align: center;
+            font-size: 2rem;
+            width: 80%;
+            margin: auto;
+            
+        }
+        #incluso div:nth-child(1){
+            grid-area: A;
+        }
+        #incluso div:nth-child(2){
+            grid-area: B;
+        }
+        #incluso div:nth-child(3){
+            grid-area: C;
+        }
+        #incluso div:nth-child(4){
+            grid-area: D;
+        }
+        
 
      
 }
@@ -1111,6 +1289,26 @@ form .submit{
         color: white;
     }
 
+    .cabecalho{
+        margin-top:2rem;
+    }
+    .cabecalho h1{
+        padding: 7rem 0 5rem;
+        font-size: 3.2rem;
+    }
+    .cabecalho .titulos{
+        padding-bottom: 2rem;
+    }
+    .cabecalho .titulos p{
+        font-size: 2rem;
+    }
+    .experience{
+        /* padding:5rem 10rem; */
+        /* position: absolute; */
+    }
+
+    
+    
    
 }
 @media(min-width: 1024px){
@@ -1196,6 +1394,18 @@ form .submit{
         font-size: 2rem;
         padding: 1.3rem;
         width: 16rem;
+        
+    }
+    .intext p{
+        font-size: 1.8rem;
+        line-height: 3.3rem;
+        
+    }
+    .intext h1{
+        text-align: center;
+        font-size: 2.4rem;
+        width: 80%;
+        margin: auto;
         
     }
 
