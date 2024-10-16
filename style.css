@@ -318,6 +318,7 @@ body{
     flex-direction: column;
     align-items: center;
 }
+
 .services .infonelio{
     margin-top: 4rem;
 }
@@ -434,6 +435,11 @@ body{
     cursor: pointer;
 
  }
+ .btncard a{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1534A9;
+ }
  .card:nth-child(2) .btncard{
     color: #DB1D1D;
  }
@@ -445,6 +451,10 @@ body{
     gap: 2%;
     margin-top: 4rem;
  }
+
+ .beneplans{
+    margin-top: 8rem;
+}
  .contbene{
     text-align: center;
     margin-bottom: 4rem;
@@ -487,7 +497,12 @@ body{
     line-height: 2.5rem;
     font-weight: normal;
     color: #D9D9D9;
-    text-align: justify;
+    text-align: center;
+    
+ }
+ .d21 p{
+    margin-top: 3rem;
+    
  }
  .introteste p span{
     font-weight: 700;
