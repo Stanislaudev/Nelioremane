@@ -21,18 +21,18 @@
         </div>
         <div class="navbar">
 
-            <a href="#" class="logo">Nelio Remane</a>
+            <a href="index.html" class="logo">Nelio Remane</a>
 
             <ul class="menu">
                 <li><a href="#">Planos</a></li>
                 <li><a href="#">Loja</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
             </ul>
 
             <a class="contact" href="#">Contact</a>
         </div>
     </div>
-    <div class="testemunials">
+    <div class="testemunials motiva">
         <div class="introteste">
            <h1>CORPO SARADO</h1>
            <p>
@@ -71,5 +71,145 @@
             </div>
         </div>
 
+        <div class="services planservice">
+
+            <div class="planos" id="hidenormal">
+            <p onclick="showplan()" class="normal">Normal</p>
+            <p onclick="hideplan()" class="vip">Vip</p>
+            </div>
+            <div class="planos" id="shownormal">
+            <p onclick="showplan()" class="normal">Normal</p>
+            <p onclick="hideplan()" class="vip">Vip</p>
+            </div>
+
+            <div onclick="showplan()" class="cards" id="plans_normal">
+
+            <div class="card cardnorm">
+                <div class="info">
+                <p>Pacote</p>
+                <h1>3.000MT</h1>
+                <h3>30 dias</h3>
+                <button class="btncard btnplan">Aderir</button>
+                <ul>
+                    <li><img src="src/images/marca-de-verificacao.png" alt="">Nutrição</li>
+                    <li><img src="src/images/marca-de-verificacao.png" alt="">Suplementação</li>
+                    <li><img src="src/images/marca-de-verificacao.png" alt="">Treino</li>
+                 </ul>
+                </div>
+                
+            </div>
+
+            <div class="card cardnorm">
+                <div class="info">
+                    <p>Pacote</p>
+                    <h1>5.000MT</h1>
+                    <h3>60 dias</h3> 
+                    <button class="btncard btnplan">Aderir</button>
+                    <ul>
+                        <li class="desc"><img src="src/images/marca-de-verificacao.png" alt="">1.000mt OFF</li>
+                        <li><img src="src/images/marca-de-verificacao.png" alt="">Nutrição</li>
+                        <li><img src="src/images/marca-de-verificacao.png" alt="">Suplementação</li>
+                        <li><img src="src/images/marca-de-verificacao.png" alt="">Treino</li>
+                     </ul> 
+                </div>
+                   
+            </div>   
+            </div>
+
+            <div class="cards " id="plans_vip">
+                <div class="card cardsvip">
+                    <div class="info">
+                    <p>Pacote</p>
+                    <h1>5.000MT</h1>
+                    <h3>30 dias</h3>
+                    <button class="btncard btnplan">Aderir</button>
+                    <ul>
+                        <li><img src="src/images/marca-de-verificacao.png" alt="">Nutrição</li>
+                        <li><img src="src/images/marca-de-verificacao.png" alt="">Suplementação</li>
+                        <li><img src="src/images/marca-de-verificacao.png" alt="">Treino</li>
+                        <li><img src="src/images/marca-de-verificacao.png" alt=""> Personalizado</li>
+                        <li><img src="src/images/marca-de-verificacao.png" alt="">Prioridade no atendimento</li>
+                        <li><img src="src/images/marca-de-verificacao.png" alt="">
+                         Acesso Gratis a Comunidade   
+                        </li>
+                        <li><img src="src/images/marca-de-verificacao.png" alt="">2 Suplementos</li>
+                     </ul> 
+                </div>
+                
+            </div>
+
+            <div class="card cardsvip">
+                <div class="info">
+                    <p>Pacote</p>
+                    <h1>10.000MT</h1>
+                    <h3>90 dias</h3>
+                    <button class="btncard btnplan">Aderir</button>
+                    <ul>
+                        <li class="desc"><img src="src/images/marca-de-verificacao.png" alt="">5.000mt OFF</li>
+                        <li><img src="src/images/marca-de-verificacao.png" alt="">Nutrição</li>
+                        <li><img src="src/images/marca-de-verificacao.png" alt="">Suplementação</li>
+                        <li><img src="src/images/marca-de-verificacao.png" alt="">Treino</li>
+                        <li><img src="src/images/marca-de-verificacao.png" alt=""> Personalizado</li>
+                        <li><img src="src/images/marca-de-verificacao.png" alt="">Prioridade no atendimento</li>
+                        <li><img src="src/images/marca-de-verificacao.png" alt="">
+                         Acesso Gratis a Comunidade   
+                        </li>
+                        <li><img src="src/images/marca-de-verificacao.png" alt="">2 Suplementos</li>
+                     </ul> 
+                </div>
+                
+            </div>
+
+    </div>
+</div>
+<footer class="footer">
+    <div class="left">
+        <h1 class="logo">
+            NÉLIO REMANE
+        </h1>
+        <div class="icons">
+            <a href=""><img src="src/images/linkedin.png" alt=""></a>
+            <a href="https://wa.me/258870884888"><img src="src/images/whats.png" alt=""></a>
+            <a href="https://www.tiktok.com/@nelioremane?_t=8pHFh1xQvsD&_r=1"><img src="src/images/tiktok.png" alt=""></a>
+            <a href="https://www.instagram.com/nelioremane1?igsh=MnY3cGN4ZjByeHB3"><img src="src/images/instagram.png" alt=""></a>
+            <a href="https://www.facebook.com/nelioremane?mibextid=ZbWKwL"><img src="src/images/facebook.png" alt=""></a>
+        </div>
+        <form action="#" method="post" class="formmob">
+            <label for="newsletter" class="label">Newsletter</label>
+            <input type="text" id="newsletter" name="newsletter" placeholder="Seu e-mail" class="input">
+            <input type="submit" value="Enviar" class="submit">
+        </form>
+        <h3>Contactos</h3>
+        <div class="contacts">
+        <div class="numbers">
+            <p>+258 84 014 8371</p>
+            <p>+258 87 088 4888</p>
+        </div>
+        <a href="health@nelioremane.com">health@nelioremane.com</a>
+        </div>
+
+        <div class="icons iconsmob">
+            <a href=""><img src="src/images/linkedin.png" alt=""></a>
+            <a href="https://wa.me/258870884888"><img src="src/images/whats.png" alt=""></a>
+            <a href="https://www.tiktok.com/@nelioremane?_t=8pHFh1xQvsD&_r=1"><img src="src/images/tiktok.png" alt=""></a>
+            <a href="https://www.instagram.com/nelioremane1?igsh=MnY3cGN4ZjByeHB3"><img src="src/images/instagram.png" alt=""></a>
+            <a href="https://www.facebook.com/nelioremane?mibextid=ZbWKwL"><img src="src/images/facebook.png" alt=""></a>
+        </div>
+    </div>
+    <div class="form-container">
+        <form method="post" action="" name="contact-form">
+            <label for="newsletter" class="label">Newsletter</label>
+            <input type="email" id="newsletter" name="your-email" placeholder="Seu e-mail" class="input">
+            <button type="submit" class="submit">Enviar</button>
+        </form>
+
+    </div>
+ </footer>
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ <script src="script.js"></script>
+
+ 
+
+  <script src="googlesheet.js"></script>
 </body>
 </html>
