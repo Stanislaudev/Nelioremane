@@ -471,6 +471,7 @@ body{
     text-transform: uppercase;
     line-height: 2rem;
  }
+ 
 
  .introteste {
     text-align: center;
@@ -796,6 +797,16 @@ form .submit{
     .info .desc:nth-child(1){
        text-decoration: line-through;
     }
+    .showcase{
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+
+    .d21image{
+        width: 80%;  
+    }
+    
 }
 
 
