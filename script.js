@@ -1,19 +1,19 @@
-function showplan(){
-    document.querySelectorAll('#plans_normal, #hidenormal').forEach(element => {
-        element.style.display = 'flex';
-    });
-    document.querySelectorAll('#plans_vip, #shownormal').forEach(element => {
-        element.style.display = 'none';
-    });
-}
-function hideplan() {
-    document.querySelectorAll('#plans_normal, #hidenormal').forEach(element => {
-        element.style.display = 'none';
-    });
-    document.querySelectorAll('#plans_vip, #shownormal').forEach(element => {
-        element.style.display = 'flex';
-    });
-}
+// function showplan(){
+//     document.querySelectorAll('#plans_normal, #hidenormal').forEach(element => {
+//         element.style.display = 'flex';
+//     });
+//     document.querySelectorAll('#plans_vip, #shownormal').forEach(element => {
+//         element.style.display = 'none';
+//     });
+// }
+// function hideplan() {
+//     document.querySelectorAll('#plans_normal, #hidenormal').forEach(element => {
+//         element.style.display = 'none';
+//     });
+//     document.querySelectorAll('#plans_vip, #shownormal').forEach(element => {
+//         element.style.display = 'flex';
+//     });
+// }
 
 const swiper = new Swiper('.slider-wrapper', {
    
@@ -48,3 +48,37 @@ const swiper = new Swiper('.slider-wrapper', {
     }
   
   });
+
+  function showplan(){
+        document.querySelectorAll('#menumobile, .iconhide').forEach(element => {
+            element.style.display = 'flex';
+        }) 
+    
+        document.querySelectorAll('.iconshow').forEach(element => {
+            element.style.display = 'none';
+        })}
+
+        function hideplan(){
+            document.querySelectorAll('#menumobile, .iconhide').forEach(element => {
+                element.style.display = 'none';
+            }) 
+        
+            document.querySelectorAll('.iconshow').forEach(element => {
+                element.style.display = 'flex';
+            })
+        
+        }
+
+        // function hideplan(){
+        //     const fechar = document.querySelector('#menumobile')
+        //     const  fechar2 = document.querySelector('.iconhide')
+        //     const abrir = document.querySelector('.iconshow'
+        //     )
+        //     fechar.style.display = 'none'
+        //     fechar2.style.display = 'none'
+        //     abrir.style.display = 'flex'
+        
+        // }
+
+
+        

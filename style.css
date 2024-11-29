@@ -11,6 +11,7 @@ body{
     background-color: #131111;
     color: white;
     font-family: "Poppins", sans-serif;
+    min-width: 355px;
     
    
 }
@@ -26,14 +27,18 @@ body{
     text-decoration: none;
 }
 .contact{
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: white;
     background: linear-gradient(95deg, #E72C2C 2.56%, #811919 99.91%);
     padding: 1rem 2.6rem;
     border-radius: 4rem;
     text-decoration: none;
-
+    transition: all ease-in-out 0.2s;
+}
+.contact:hover {
+    background: linear-gradient(60deg, #811919 99.91%, #E72C2C 2.56%);
+    padding:1.2rem 2.8rem;
 }
 
 .hero{
@@ -76,9 +81,12 @@ body{
 .slider-wrapper{
     overflow: hidden;
     max-width: 1100px;
-    margin: 0 0 5.5rem;
+    margin: 0 auto 5.5rem;
+ 
     
 }
+
+
 .items{
     display: flex;
     user-select: none;
@@ -97,7 +105,7 @@ body{
 
 
 .card-list .card-item .user-image{
-    width: 20rem;
+    width: 14rem;
     margin-bottom: 2rem;
 
 }
@@ -118,7 +126,7 @@ body{
     color: #D9D9D9;
     text-align: justify;
     line-height: 2.5rem;
-    height: 15rem;
+    height: 12rem;
     margin-bottom: 1rem;
     
 }
@@ -142,9 +150,44 @@ body{
     color: #DB1D1D;
 }
 
+.heroimage{
+    display: none;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.2s;
+
+}
+.hidden2{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-50%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    /* transform: translateY(0); */
+    
+}
+
+.heroel:nth-child(1){
+    transition-delay: 600ms;
+}
+.heroel:nth-child(2){
+    transition-delay: 200ms;
+}
+.heroel:nth-child(3){
+    transition-delay: 400ms;
+
+}
 
 
-@media (min-width: 350px){
+@media (min-width: 250px){
     .herosection{
         padding: 0 2rem 0 2rem;
         width: 100%;
@@ -155,11 +198,35 @@ body{
         display: none;
     }
     .navbar_mobile{
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-top: 2rem;
+        /* position: fixed; */
     }
+    .iconhide{
+        display: none; 
+    }
+
+    #menumobile{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin:auto;
+        background-color: hsla(227, 78%, 37%, 0.89);
+        width: 100%;
+        position:absolute;
+        top: 4.8rem;
+        padding: 2rem;
+        gap: 0.8rem;
+        
+    }
+    li{
+        list-style: none;
+    }
+
+    
     .hero{
         flex-direction: column;
         align-items: center;
@@ -203,8 +270,13 @@ body{
     background-color: #1534A9;
     color: white;
     margin-right: 3.7rem;
-    
+    transition: all ease-in-out 0.2s;
 }
+#cta-hero:hover{
+    padding: 1.2rem 2.4rem;
+    background-color: #DB1D1D;
+}
+
 .ctabtn-hero img{
     display: none;
 }
@@ -218,22 +290,28 @@ body{
     margin: 4rem auto;
     width: 90%;
  }
+ .beneplans{
+    margin: auto;
+ }
 .meet-nelio{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 110rem;
+    margin-top: 4rem;
 }
 .infonelio{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 110rem;
 }
 .neliomeet{
-    width: 80%;
+    width: 60%;
 }
 .h1meet{
     margin: 4rem 0 1.5rem 0;
-    font-size: 3rem;
+    font-size: 2.2rem;
     text-transform: uppercase;
     letter-spacing: 2.4px;
    
@@ -308,7 +386,10 @@ body{
     border-radius: 4rem;
     text-decoration: none;
     
+    cursor: pointer;
 }
+
+
 .divider{
     margin-top: 6rem;
     width: 80%;
@@ -320,10 +401,16 @@ body{
 }
 
 .services .infonelio{
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 .services .h1meet{
     margin-bottom: 2rem;
+}
+
+.pacotes{
+    font-size: 3rem;
+    margin: 5rem auto;
+    text-align: center;
 }
 
  .planos{
@@ -367,7 +454,7 @@ body{
  }
 
  .cards{
-    margin-top: 4rem;
+    margin-top: 2rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -381,14 +468,15 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 250px;
-    height:347px;
+    width: 180px;
+    height:260px;
     background-color: #1534A9;
-    gap: 4.7rem;
-    
+    gap: 3rem;
+    border-radius: 3rem;
  }
  .cardnorm{
-    height:45rem;
+    height:40rem;
+    margin-top: 1rem;
  }
  .cardsvip{
     height: 60rem;
@@ -401,38 +489,44 @@ body{
     width: 190px;
     flex-direction: column;
     align-items: center;
-    gap: 0.8rem;
-    padding-top: 70px;
+    gap: 0.4rem;
+    padding-top: 30px;
     letter-spacing: 0.18rem;
 
  }
  .info p{
-    font-size: 1.6rem;
+    text-decoration: line-through;
+ }
+ .info p{
+    font-size: 1.2rem;
  }
  .info h3{
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: normal;
+    
  }
  .info h2{
-    font-size: 2.4rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
 
  }
  .info h1{
-    font-size: 3.6rem;
+    font-size: 2rem;
  }
  .cardnorm button, .cardsvip button{
     margin: 2rem 0;
  }
   
  .btncard{
-    padding: 1.8rem 6rem;
+    padding: 1.5rem 3rem;
     border-radius: 4rem;
     border: none;
     box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.25);
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 700;
     color: #1534A9;
     cursor: pointer;
+    
 
  }
  .btncard a{
@@ -447,9 +541,10 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 90%;
-    gap: 2%;
+    width: 100%;
+    gap: 1%;
     margin-top: 4rem;
+    max-width: 110rem;
  }
 
  .beneplans{
@@ -462,7 +557,7 @@ body{
     /* padding: 0 1rem; */
  }
  .contbene img{
-    width: 57%;
+    width: 40%;
  }
  .contbene p{
     font-size: 1.4rem;
@@ -477,10 +572,10 @@ body{
     text-align: center;
     width: 90%;
     margin: 15rem auto 6rem;
-
+    max-width: 110rem;
  }
  .introteste h1{
-    font-size: 2.6rem;
+    font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: 3rem;
     line-height: 4rem;
@@ -494,8 +589,8 @@ body{
     -webkit-text-stroke-width: 0.1rem;
  }
  .introteste p{
-    font-size: 1.4rem;
-    line-height: 2.5rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
     font-weight: normal;
     color: #D9D9D9;
     text-align: center;
@@ -514,6 +609,8 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 130rem;
+        margin: auto;
     }
     .testemunho img:nth-child(4){
         display: none;
@@ -525,12 +622,12 @@ body{
         width: 100%;
     }
     .id img{
-            width: 80%;
-            max-width: 41.4rem;
+            width: 60%;
+            max-width:50.4rem;
         }
     .name{
     position: relative;
-    bottom: 5.5rem;
+    bottom: 5rem;
     text-align: center;
     }
 
@@ -549,6 +646,7 @@ body{
     display: flex;
     flex-direction: column;
     /* align-items: center; */
+
     
 }
 .testemunho h1{
@@ -557,7 +655,7 @@ body{
     line-height: 2rem;
 }
 .testemunho img{
-    width: 50%;
+    width: 30%;
     margin-bottom: 1rem;
 }
 
@@ -683,7 +781,8 @@ form .submit{
     margin-top: 1.5rem;
 }
 .cabecalho h1{
-    padding: 3rem 0;
+    padding: 2rem 0;
+    font-size: 1.4rem;
 }
 .cabecalho .titulos{
     display: flex;
@@ -709,9 +808,9 @@ form .submit{
     
 }
 .experience .quntdata{
-    text-align: center;
-    
+    text-align: center;  
 }
+
 .quntdata h1{
     font-size:4rem;
     margin-bottom: 0.6rem;
@@ -749,10 +848,12 @@ form .submit{
         flex-direction: column;
         align-items: center;
         gap: 2rem;
+        max-width: 110rem;
         
     }
     #incluso{
         display: none;
+        max-width: 110rem;
     }
 
     .intext_p{
@@ -768,8 +869,12 @@ form .submit{
         color: #D9D9D9;
     }
     .intext_A h1{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         text-align: center;
+    }
+    .intext_p  span{
+        font-weight: bold;
+        color: #fff;
     }
 
     .footer{
@@ -783,8 +888,10 @@ form .submit{
         flex-direction: column;
         gap: 1rem;
         font-size: 1.8rem;
-        margin-top: 2rem;  
+        margin: 2rem;
         list-style: none;
+        justify-content: center;
+        
     }
     .info ul li img{
         width: 10%;
@@ -793,6 +900,9 @@ form .submit{
     .info li{
        display: flex;
        align-items: center;
+       font-size: 1.4rem;
+       
+       
     }
     .info .desc:nth-child(1){
        text-decoration: line-through;
@@ -800,12 +910,58 @@ form .submit{
     .showcase{
         display: flex;
         justify-content: center;
-        margin-top: 4rem;
+        margin: 4rem 0;
     }
 
     .d21image{
         width: 80%;  
+        /* max-width: 120rem; */
+    
     }
+    #lojabody{
+        margin-top: 2rem;
+    }
+    .suplementos{
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        margin: auto;
+        max-width: 110rem;
+        
+    }
+    .suplementos img{
+        width: 40%;
+        margin-top: 5rem;
+    }
+    .ptext{
+        text-align: justify;
+        margin-top: 2rem;
+    }
+
+    .beneindex{
+       
+        width: 80%;
+    }
+    .lojaimage{
+        display: flex;
+        flex-wrap: wrap;
+       justify-content: center;
+       gap: 2rem;
+       margin-bottom: 3rem;
+       max-width: 110rem;
+    }
+    .lojaimage img{
+        max-width: 40%;
+        margin-top: 2rem;
+    }
+
+    .mapa{
+        display: flex;
+        margin: auto;
+        width: 90%;
+        justify-content: center;
+    }
+
     
 }
 
@@ -822,6 +978,9 @@ form .submit{
   .name p{
     font-size: 1.8rem;
   }
+  .h1meet{ 
+    font-size:2.4rem;
+}
 }
 @media (min-width: 550px) {
     .navbar_mobile{
@@ -836,8 +995,12 @@ form .submit{
 }
 
 #cta-hero{
-    padding: 1rem 2.5rem;
+    padding: 1rem 2.4rem;
     font-size: 2rem;
+}
+#cta-hero:hover{
+    padding: 1.2rem 2.5rem;
+    background-color: #DB1D1D;
 }
 .timeline div p{
     font-size: 1.2rem;
@@ -868,7 +1031,7 @@ form .submit{
 
 @media (min-width: 610px) {
     .name{
-        bottom: 9rem;
+        bottom: 7rem;
     }
     .contacts{
         
@@ -901,6 +1064,7 @@ form .submit{
     .menu a{
         color: white;
         text-decoration: none;
+        font-size: 1.6rem;
     }
 
     
@@ -943,18 +1107,20 @@ form .submit{
     .meet-nelio{
         
             width: 90%;
-            margin: auto;
+            margin: 4rem auto;
         flex-direction: row;
         gap: 2rem;
        
     }
   .pmeet{
+        font-size: 1.6rem;
         text-align: start;
         
     }
-
+   
     .neliomeet{
-        width: 47%;
+        width: 40%;
+        margin: 3.5rem;
        
     }
     .infonelio{
@@ -972,7 +1138,7 @@ form .submit{
     .btnbody{
         width: 90%;
         
-            margin-top: 3rem;
+        margin-top: 3rem;
 }
     
     .morebtn{
@@ -983,22 +1149,37 @@ form .submit{
     .divider{
         display: none;
     }
+    
+
+    
     .services .pmeet{
         text-align: center;
+        max-width: 120rem;
     }
+    .services  .ptext{
+        text-align: justify;
+    }
+
     .cards {
-        flex-direction: row
-        ;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
     }
     .beneficios{
-        gap: 4rem;
+        gap: 2rem;
         margin-bottom: 6rem;
+        width: 90%;
     }
+    .h1meet{ 
+        font-size:3rem;
+    }
+    
     .contbene{
         margin-bottom: 0rem;
     }
     .contbene img{
-        width: 65%;
+        width: 40%;
      }
      .contbene p{
         font-size: 1.4rem;
@@ -1015,22 +1196,44 @@ form .submit{
         line-height: 4rem;
     
      }
-     
+     .d21 p{
+        margin-right: 4.5rem;
+     }
      .introteste p{
-        font-size: 2rem;
-        line-height: 3.5rem;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        max-width: 100rem;
+        
    
      }
+     .perfil{
+        flex-direction: row;
+        width: 95%;
+        
+    }
 
+    
+    .name{
+        bottom: 6rem;
+    }
     .name h2{
-        font-size: 2.8rem;
-    } 
-    .name p{
         font-size: 2rem;
     }
+    .name p{
+        font-size: 1.4rem;
+    }
+    .testemunho {
+        margin-right: 5rem;
+    }
+    .testemunho img:nth-child(4){
+        display: flex;
+        width: 100%;
+        margin-top: 3rem;
+    }
+    
     .testemunho p{
-        font-size: 2rem;
-        line-height: 3.5rem;
+        font-size: 1.6rem;
+        line-height: 2rem;
     }
     .contacts{
         
@@ -1062,14 +1265,14 @@ form .submit{
         margin-top:2rem;
     }
     .cabecalho h1{
-        padding: 7rem 0 5rem;
-        font-size: 3.2rem;
+        padding: 4rem 0 2rem;
+        font-size: 2rem;
     }
     .cabecalho .titulos{
         padding-bottom: 2rem;
     }
     .cabecalho .titulos p{
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
     .experience{
         flex-direction: row;
@@ -1100,7 +1303,7 @@ form .submit{
             display: grid;
             width: 80%;
             margin: auto;
-            grid-template-areas: "A B B" "C C D";
+            grid-template-areas: "A B B" "C C D" "E F F";
             gap: 2rem;
            
         }
@@ -1114,8 +1317,10 @@ form .submit{
         } 
        
         .intext p{
-            font-size: 1.6rem;
-            line-height: 3.3rem;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            color: #D9D9D9;
+            text-align: justify;
             
         }
         .intext h1{
@@ -1123,11 +1328,17 @@ form .submit{
             font-size: 2rem;
             width: 80%;
             margin: auto;
+            color: #D9D9D9;
             
+        }
+       .intext  span{
+            font-weight: bold;
+            color: #ffffff;
         }
         #incluso div:nth-child(1){
             grid-area: A;
         }
+        
         #incluso div:nth-child(2){
             grid-area: B;
         }
@@ -1137,10 +1348,21 @@ form .submit{
         #incluso div:nth-child(4){
             grid-area: D;
         }
-        
-
+        #incluso div:nth-child(5){
+            grid-area: E;
+        }
+        #incluso div:nth-child(6){
+            grid-area: F;
+        }
+        /* .ptext{
+            text-align: justify;
+        }
+         */
+         
+         
+    }
+    
      
-}
 @media (min-width: 868px){
     .herosection{
         /* min-height: 81.5rem; */
@@ -1193,15 +1415,16 @@ form .submit{
     }
    
     #cta-hero{
-        border: none;
-        border-radius: 4rem;
-        font-size: 2.8rem;
-        padding: 1rem 3.2rem;
-        background-color: #1534A9;
-        color: white;
-        margin-right: 3.7rem;
+        
+        font-size: 2.4rem;
+        padding: 1.4rem 2.8rem;
+    
        
         
+    }
+    #cta-hero:hover{
+        padding: 1.6rem 3rem;
+        background-color: #DB1D1D;
     }
     .overlay{
         background: linear-gradient(180deg, rgba(13, 13, 13, 0.00) 0%, #000 104.59%);    
@@ -1210,7 +1433,7 @@ form .submit{
 
     
     .neliomeet{
-        max-width: 90%;
+        max-width: 60%;
     }
     .h1meet{
         font-size: 3rem;
@@ -1220,7 +1443,7 @@ form .submit{
   
   .pmeet{
         line-height: 2.6rem;
-        font-size: 1.8rem;
+        
         text-align: start;
         margin-top: 2rem;
     }
@@ -1246,9 +1469,16 @@ form .submit{
         width: 95%;
         
     }
+
     
     .name{
-        bottom: 7rem;
+        bottom: 6rem;
+    }
+    .name h2{
+        font-size: 2rem;
+    }
+    .testemunho {
+        margin-right: 5rem;
     }
     .testemunho img:nth-child(4){
         display: flex;
@@ -1370,6 +1600,9 @@ form .submit{
     
    
 }
+@media(min-width: 900px){
+
+}
 @media(min-width: 1024px){
     .herocontent{
         width: 90%;
@@ -1404,9 +1637,11 @@ form .submit{
     }
     .timeline div p{
         margin-top: 0;
+        text-align: center;
     }
+    
     .beneficios{
-        gap: 4rem;
+        gap: 1rem;
         margin-bottom: 6rem;
         width: 90%;
     }
@@ -1414,10 +1649,10 @@ form .submit{
         margin-bottom: 0rem;
     }
     .contbene img{
-        width: 50%;
+        width: 30%;
      }
      .contbene p{
-        font-size: 2rem;
+        font-size: 1.4rem;
         width: 19.6rem;
         margin-top: 1.4rem;
         text-transform: uppercase;
@@ -1426,7 +1661,7 @@ form .submit{
      }
 
      .name{
-        bottom: 8rem;
+        bottom: 7rem;
      }
      .testemunho{
         margin-bottom: 8rem;

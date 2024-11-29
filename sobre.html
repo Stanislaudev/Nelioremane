@@ -10,15 +10,32 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan Script' rel='stylesheet'>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
+    <script defer src="app.js"></script>
     <title>Nelio Remane</title>
 </head>
 <body>
-    <div class="herosection">
-        <div class="navbar_mobile">
-            <a href="#" class="logo">Nelio Remane</a>
-            <a href=""><img src="src/images/mobile-menu.png" alt=""></a>
-        </div>
+    
+       
+        <div class="herosection">
+            <div class="navbar_mobile">
+               
+               
+    
+                <a href="index.html" class="logo">Nelio Remane</a>
+                
+                <ul id="menumobile">
+                    <li><a href="planos.html">Planos</a></li>
+                    <li><a href="loja.html">Loja</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <a class="contact" href="#ligaqui">Contact</a>
+                </ul>
+    
+                <div class="menubtn">
+                    <p class="iconshow" href="" onclick="showplan()"><img src="src/images/mobile-menu.png" alt=""></p>
+                    <p class="iconhide" href="" onclick="hideplan()"><img src="src/images/mobile-menu.png" alt=""></p>
+                </div>
+            </div>
+
         <div class="navbar">
 
             <a href="index.html" class="logo">Nelio Remane</a>
@@ -29,13 +46,13 @@
                 <li><a href="sobre.html">Sobre</a></li>
             </ul>
 
-            <a class="contact" href="#">Contact</a>
+            <a class="contact" href="#ligaqui">Contact</a>
 
         </div>
 
     </div>
  
-    <div class="cabecalho">
+    <div class="cabecalho hidden2">
         <h1>NÉLIO REMANE</h1>
         <div class="titulos">
             <p>Empresário</p>
@@ -45,7 +62,7 @@
         </div>
     </div>
  <div id="bodycontent">
-    <div class="meet-nelio">
+    <div class="meet-nelio hidden2">
       <img src="src/images/meet-nelio.png" alt="nelio-remane" class="neliomeet">
       <div class="infonelio"> 
             <h1 class="h1meet">
@@ -67,8 +84,9 @@
 
  
  </div>
- <div class="experience">
-            <div class="quntdata">
+
+ <div class="experience hidden2">
+            <div class="quntdata ">
                 <h1>10+</h1>
                 <p><span>Colaboradores</span> <span>qualificados</span></p>
             </div>
@@ -86,19 +104,20 @@
             </div>
             
         </div>
+   
     <div class="services">
         <div class="infonelio"> 
-                <h1 class="h1meet"> <span>PRêMIOS</span> GANHOS</h1>
+                <h1 class="h1meet hidden2"> <span>PRêMIOS</span> GANHOS</h1>
 
-                <p class="pmeet justifyed">O <span>fisiculturismo</span> é um <span>estilo</span> de <span>vida</span> que exige <span>dedicação total</span>  e um <span>compromisso</span> contínuo com a excelência. Ao longo dos anos, tive o <span>privilégio</span> de transformar essa <span>paixão</span> em <span>conquistas</span> notáveis, refletindo o <span>trabalho árduo</span>, a disciplina e a <span>determinação</span> que dedico diariamente à minha prática.</p>
+                <p class="pmeet justifyed hidden2">O <span>fisiculturismo</span> é um <span>estilo</span> de <span>vida</span> que exige <span>dedicação total</span>  e um <span>compromisso</span> contínuo com a excelência. Ao longo dos anos, tive o <span>privilégio</span> de transformar essa <span>paixão</span> em <span>conquistas</span> notáveis, refletindo o <span>trabalho árduo</span>, a disciplina e a <span>determinação</span> que dedico diariamente à minha prática.</p>
 
                 <div class="premios">
-                    <div class="premio">
+                    <div class="premio hidden">
                         <img src="src/images/premio.png" alt="">
                         <p> <span>3ª Posição</span> no Campeonato Africano da NABBA South Africa</p>
                     </div>
 
-                    <div class="premio">
+                    <div class="premio hidden">
                         <img src="src/images/premio.png" alt="">
                         <p> <span>7ª Posição</span> no Campeonato Mundial Mr. Universo em Singapura</p>
                     </div>
@@ -110,7 +129,7 @@
        
 
  </div>
- <footer>
+ <footer class="footer">
     <div class="left">
         <h1 class="logo">
             NÉLIO REMANE
